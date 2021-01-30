@@ -128,7 +128,55 @@ npm notice
 ```
 
 
+# npm包添加新的功能或者方法，将其更新到npm上
 
+* 更新版本 npm version patch
+* 是在git仓库里面的话，要先commit变化，再push到git的远程仓库，才能publish发布更新
+
+```bash
+PS C:\myData\project\label-kabuka> npm version patch
+v1.0.6 # 更新了版本
+PS C:\myData\project\label-kabuka> npm publish
+npm notice 
+npm notice package: label-kabuka-common@1.0.6
+npm notice === Tarball Contents ===
+npm notice 524B  common-method/index.js
+npm notice 4B    index.js
+npm notice 374B  package.json
+npm notice 3.6kB README.md
+npm notice === Tarball Details ===
+npm notice name:          label-kabuka-common
+npm notice version:       1.0.6
+npm notice package size:  2.0 kB
+npm notice unpacked size: 4.5 kB
+npm notice shasum:        682be8ee3e158559999175cc3727248b2af773c0
+npm notice integrity:     sha512-+w3hAWOn3vs3+[...]sWCpDfwAEzciQ==
+npm notice total files:   4
+npm notice
++ label-kabuka-common@1.0.6 # 新版本已经发布到npm上
+```
+
+
+## 删除某个版本的npm包
+
+```bash
+PS C:\myData\project\label-kabuka> npm unpublish label-kabuka-common@1.0.6
+- label-kabuka-common@1.0.6
+```
+
+## 删除npm包
+
+```bash
+PS C:\myData\project\label-kabuka> npm unpublish label-kabuka
+npm ERR! Refusing to delete entire project. # 删除失败，
+npm ERR! Run with --force to do this.
+npm ERR!
+npm ERR! npm unpublish [<@scope>/]<pkg>@<version> # 尝试按版本号删除
+npm ERR! npm unpublish [<@scope>/]<pkg> --force
+PS C:\myData\project\label-kabuka> npm unpublish label-kabuka --force # 需要添加 --force 参数
+npm WARN using --force I sure hope you know what you are doing.
+- label-kabuka
+```
 
 
 

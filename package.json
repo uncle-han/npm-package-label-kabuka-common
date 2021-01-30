@@ -1,6 +1,6 @@
 {
-  "name": "label-kabuka-common",
-  "version": "1.0.6",
+  "name": "kabuka-common",
+  "version": "0.0.1",
   "description": "",
   "main": "./index.js",
   "repository": {
@@ -13,6 +13,6 @@
   "keywords": [
     "common-method"
   ],
-  "author": "",
+  "author": "label",
   "license": "ISC"
 }
