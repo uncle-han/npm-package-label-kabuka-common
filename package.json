@@ -1,11 +1,11 @@
 {
-  "name": "label-kabuka",
+  "name": "label-kabuka-common",
   "version": "1.0.5",
   "description": "",
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:uncle-han/npm-package-label-kabuka-common.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
